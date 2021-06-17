@@ -30,7 +30,7 @@ def sortTweets(data, last_tweet_retrieved):
 
 def main(last_tweet_retrieved):
     headers = create_headers(settings.bearer_token)
-    url = create_url('from:SupyJP')
+    url = create_url('from:mangadeals')
     data = connect_to_endpoint(url, headers)
     jsonString = json.dumps(data, indent = 4, sort_keys = True)
     jsonFile = open("request.json", "w")
